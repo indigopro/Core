@@ -1,6 +1,6 @@
-import type {ModuleDescriptor, ModuleGroup} from '../core/module'
-import type {ModulePermission, PermissionLevel} from '../core/permission'
-import type { SessionState } from '../core/session'
+import type {ModuleDescriptor, ModuleGroup} from './module'
+import type {ModulePermission, PermissionLevel} from './permission'
+import type { SessionState } from './session'
 
 export type UserDataService = {
   getUser(): Promise<User>
