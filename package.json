@@ -1,21 +1,22 @@
 {
   "name": "@indigopro/core",
-  "version": "1.0.1",
-  "description": "",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "dependencies": {
-  },
-  "devDependencies": {    
+  "version": "1.0.3",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/**/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
     "@types/moment": "^2.13.0",
-    "@types/moment-timezone": "^0.5.30",    
+    "@types/moment-timezone": "^0.5.30",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.40",
     "typescript": "^4.9.5"
   },
   "scripts": {
     "build": "npx tsc",
-    "publish": "npx tsc && npm publish"
+    "deploy": "npx del-cli --force ./dist && npx standard-version && npx tsc && npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,5 @@
   "bugs": {
     "url": "https://github.com/indigopro/core/issues"
   },
-  "homepage": "https://github.com/indigopro/core#readme",
-  "files": [
-    "lib/**/*"
-  ]
+  "homepage": "https://github.com/indigopro/core#readme"
 }
