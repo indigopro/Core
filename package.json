@@ -1,11 +1,26 @@
 {
   "name": "@indigopro/core",
-  "version": "1.0.9",
+  "version": "1.0.10",
+  "description": "",
+  "author": "",
+  "license": "ISC",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "./dist/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigopro/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/indigopro/core/issues"
+  },
+  "homepage": "https://github.com/indigopro/core#readme",
+  "scripts": {
+    "build": "npx tsc",
+    "deploy": "npx del-cli --force ./dist && npx standard-version && npx tsc && npm publish"
+  },
   "dependencies": {
     "@types/moment": "^2.13.0",
     "@types/moment-timezone": "^0.5.30",
@@ -14,20 +29,5 @@
   },
   "devDependencies": {
     "typescript": "^4.9.5"
-  },
-  "scripts": {
-    "build": "npx tsc",
-    "deploy": "npx del-cli --force ./dist && npx standard-version && npx tsc && npm publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/indigopro/core.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/indigopro/core/issues"
-  },
-  "homepage": "https://github.com/indigopro/core#readme"
+  }
 }
