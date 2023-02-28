@@ -1,4 +1,3 @@
-
 export type TenantDataService = {
   getTenant(): Promise<Tenant>
 }
@@ -20,7 +19,7 @@ export type Tenant = {
   emblem: string
   welcomeSplash: string
   tenantDefault: boolean
-  langCode:string
+  langCode: string
 }
 
 export const DefaultTenant: Tenant = {
@@ -39,5 +38,5 @@ export const DefaultTenant: Tenant = {
   welcomeSplash: '',
   domains: '',
   tenantDefault: false,
-  langCode: 'en'
+  langCode: 'en',
 }

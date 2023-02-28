@@ -1,16 +1,15 @@
-export type InputType = 'text' | 'number' | 'checkbox' | 'datetime' | 'date' | 'time' | 'week' | 'month' | 'search' | 'email' | 'tel' | 'password' | 'url' | 'file' | 'image' | 'color' | 'radio' | 'range' | 'reset' | 'dropdown';
+export type InputType = 'text' | 'number' | 'checkbox' | 'datetime' | 'date' | 'time' | 'week' | 'month' | 'search' | 'email' | 'tel' | 'password' | 'url' | 'file' | 'image' | 'color' | 'radio' | 'range' | 'reset' | 'dropdown'
 
-export type TextAlign = 'center' | 'left' | 'right' | 'justify';
+export type TextAlign = 'center' | 'left' | 'right' | 'justify'
 
 export type FormatType = 'image' | 'flag' | 'attachment' | 'checkbox' | 'datetime' | 'text'
 
 export type FieldType = 'string' | 'number' | 'bool' | 'date' | 'objet'
 
 export type Size = {
-  width: number;
-  height: number;
-};
-
+  width: number
+  height: number
+}
 
 export interface Input<T = InputType> {
   type: T
@@ -46,7 +45,7 @@ export interface Column {
   width?: number
   header?: { align?: TextAlign; className?: string; style?: string }
   align?: TextAlign
-  classRenderer?: (key: string, value:any, column: Column, data: any)=>string
+  classRenderer?: (key: string, value: any, column: Column, data: any) => string
   style?: string
   group?: string
   filtertype?: 'textbox' | 'input' | 'checkedlist' | 'list' | 'number' | 'bool' | 'date' | 'range' | 'custom'
@@ -65,7 +64,7 @@ export interface FieldSchema<T = FieldType> {
   defaultValue?: any
   required?: boolean
   column?: Column
-  editor?: (TextInput | TextAreaInput | NumberInput | CheckInput | DateInput | TimeInput | DatetimeInput | DropdownInput)
+  editor?: TextInput | TextAreaInput | NumberInput | CheckInput | DateInput | TimeInput | DatetimeInput | DropdownInput
 }
 
 export interface StringSchema extends FieldSchema<'string'> {

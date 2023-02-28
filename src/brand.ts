@@ -1,11 +1,10 @@
-
 export type Brand = {
-  name: string;
-  logo: any;
-  monogram: any;
-  symbol: any;
-  emblem: any;
-  templates?: { [key: string]: string; };
+  name: string
+  logo: any
+  monogram: any
+  symbol: any
+  emblem: any
+  templates?: { [key: string]: string }
 }
 
 export const DefaultBrand: Brand = {
@@ -15,4 +14,3 @@ export const DefaultBrand: Brand = {
   symbol: null,
   emblem: null,
 }
-

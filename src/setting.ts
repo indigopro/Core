@@ -1,4 +1,4 @@
-import type {PermissionLevel} from './permission'
+import type { PermissionLevel } from './permission'
 
 export type SettingLevel = 'Portal' | 'Module' | 'User'
 

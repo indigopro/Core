@@ -1,6 +1,6 @@
 export enum Orientation {
   Landscape = 'landscape',
-  Portrait = 'portrait'
+  Portrait = 'portrait',
 }
 
 export type Screen = {

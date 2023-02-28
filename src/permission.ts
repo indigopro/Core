@@ -1,5 +1,5 @@
-import type { ModuleDescriptor } from "./module"
-import type { User } from "./user"
+import type { ModuleDescriptor } from './module'
+import type { User } from './user'
 
 export enum PermissionLevel {
   Admin = 1, // Manage everything
@@ -13,12 +13,12 @@ export enum PermissionLevel {
   Contributor = 9,
   Requestor = 10,
   Guest = 98,
-  None = 99
+  None = 99,
 }
 
 export enum PermissionBehavior {
   Access = 1,
-  Visualization = 2
+  Visualization = 2,
 }
 
 export type ModulePermission = {
@@ -41,7 +41,6 @@ export type Permission = {
   isGuest: boolean
   isNone: boolean
 }
-
 
 export const hasPermission = (user: User, module: ModuleDescriptor, level: PermissionLevel): boolean => {
   if (user.isAdmin) {
