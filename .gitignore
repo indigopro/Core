@@ -1,6 +1,7 @@
 /.vscode
 CHANGELOG.md
 package-lock.json
+.gitignore
 
 # Logs
 logs
